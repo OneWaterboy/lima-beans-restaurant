@@ -39,8 +39,6 @@ nav {
     flex-direction: row;
     width: 50%;
     font-size: 1.5rem;
-    /*font-weight: bold;*/
-    
 }
 
 .social-links {
@@ -59,4 +57,18 @@ nav {
 .food-header-image {
     max-width: 100%;
     height: auto;
+}
+
+
+
+/*==============================================================
+        Responsive Styling (Media Queries)
+================================================================*/
+
+@media screen and (max-width: 1024px) {
+
+    .nav-links {
+        font-size: 1rem;
+    }
+
 }
