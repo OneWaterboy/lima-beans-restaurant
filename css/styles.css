@@ -1,0 +1,48 @@
+
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+body {
+    margin: 0;
+}
+/* Nav Bar Styling*/
+
+.nav-bar {
+    width: 100%;
+    background-color: lightgray;
+}
+
+.nav-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+}
+.logo {
+    width: auto;
+    margin-top: 2vh;
+    height: 15vh;
+}
+nav {
+    width: 60%;
+}
+
+.nav-links {
+    list-style: none;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    font-size: 1.5rem;
+    /*font-weight: bold;*/
+    
+}
+
+.social-links {
+    justify-content: space-around;
+    justify-self: right;
+    width: auto
+}
