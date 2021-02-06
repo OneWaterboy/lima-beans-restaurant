@@ -11,6 +11,8 @@ body {
 .nav-bar {
     width: 100%;
     background-color: lightgray;
+    position: fixed;
+    top: 0%;
 }
 
 .nav-content {
@@ -24,7 +26,7 @@ body {
 .logo {
     width: auto;
     margin-top: 2vh;
-    height: 15vh;
+    height: 8vh;
 }
 nav {
     width: 60%;
@@ -45,4 +47,16 @@ nav {
     justify-content: space-around;
     justify-self: right;
     width: auto
+}
+
+
+/* Homepage header Styling */
+
+.home-header {
+    height: 70vh;
+}
+
+.food-header-image {
+    max-width: 100%;
+    height: auto;
 }
