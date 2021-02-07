@@ -50,13 +50,23 @@ nav {
 
 /* Homepage header Styling */
 
-.home-header {
-    height: 70vh;
+.header {
+    height: auto;
 }
 
-.food-header-image {
-    max-width: 100%;
-    height: auto;
+.header-image {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+/* Location Bar Styling */
+
+.todays-location {
+    background-color: black;
+    margin: 0;
+    color: white;
+    width: 100%;
+    text-align: center;
 }
 
 
