@@ -1,0 +1,1 @@
+Site files for the Limabeans Food Truck Company. Working towards a hybrid model that works for a food truck but is based off the design ideas of other food trucks the customer has relayed to me. 
