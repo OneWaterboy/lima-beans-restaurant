@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <title>Limabeans Fine Foods | Raleigh, NC</title>
 </head>
-<body onload="todaysLocation ()">
+<body onload="todaysLocation()">
     <div class="nav-bar">
         <div class="nav-content">
             <img class="logo" src="images/lima-beans-logo.png" alt="limabeans logo">
@@ -31,7 +31,9 @@
     </div>
     <div class="header">
         <img class="header-image" src="images/indian-dhal-spicy-curry-bowl-spices-herbs-rustic-black-wooden-table.jpg">
-        <p  class="todays-location"> Today Our Truck Is Parked At: <span id="truckAddress"></span></p>
+        <div class="truckLocale">
+            <p class="todays-location"> Today Our Truck Is Parked At:</p> <span id="truckAddress"></span>
+        </div>
     </div>
     <script src="js/scripts.js"></script>
 </body>
