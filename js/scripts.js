@@ -4,7 +4,7 @@ let dateObj = new Date();
 let currentDay = dateObj.getDay();
 
 const dayOfWeek = [
-    [0, "Sorry, Sunday's We Are Closed ~", "Come Food With Us Next Week!"],
+    [0, "~Sorry, sunday's we are closed ~", "Come Food With Us Next Week!"],
     [1, "310 New Bern Ave #174, ", "Raleigh, NC 27601"],
     [2, "316 Fayetteville St, ", "Raleigh, NC 27601"],
     [3, "350 E Six Forks Rd #150, " , "Raleigh, NC 27609"],

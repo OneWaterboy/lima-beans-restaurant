@@ -1,8 +1,8 @@
 
-
-* {
-    font-family: 'Ubuntu', sans-serif;
+:root {
+    --accent-color: lightgray;
 }
+
 body {
     margin: 0;
 }
@@ -10,7 +10,7 @@ body {
 
 .nav-bar {
     width: 100%;
-    background-color: lightgray;
+    background-color: var(--accent-color);
     position: fixed;
     top: 0%;
 }
@@ -22,14 +22,16 @@ body {
     align-items: center;
     width: 95%;
     margin: 0 auto;
+    font-family: 'Londrina Outline', cursive;
 }
 .logo {
     width: auto;
     margin-top: 2vh;
-    height: 8vh;
+    height: 10vh;
 }
 nav {
     width: 60%;
+    text-align: center;
 }
 
 .nav-links {
@@ -37,14 +39,22 @@ nav {
     justify-content: space-around;
     display: flex;
     flex-direction: row;
-    width: 50%;
-    font-size: 1.5rem;
+    width: 90%;
+    font-size: 2rem;
+    margin: 0 auto;
+    
+    
 }
 
 .social-links {
-    justify-content: space-around;
-    justify-self: right;
-    width: auto
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    width: 20%;
+}
+
+.social-links-bottom {
+    display: none;
 }
 
 
@@ -55,8 +65,9 @@ nav {
     background-image: url('/images/indian-dhal-spicy-curry-bowl-spices-herbs-rustic-black-wooden-table.jpg');
     background-size: cover;
     background-position: 25% 75%;
-    height: 90vh;
+    height: 80vh;
     width: 100vw;
+    margin-top: 6vh;
 }
 
 /* Location Bar Styling */
@@ -98,8 +109,10 @@ nav {
 
 @media screen and (max-width: 1024px) {
 
-    .nav-links {
-        font-size: 1rem;
+    ul.nav-links {
+        font-size: 2rem;
+        margin: 0;
+        padding: 0;
     }
 
     #truckAddress, #truckAddress2 {
@@ -112,7 +125,28 @@ nav {
     }
 }
 
-@media screen and (max-width: 769px) { }
+@media screen and (max-width: 769px) {
+
+    .social-links {
+        display: none;
+    }
+
+    .nav-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .nav-links {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0px;
+        margin-top: 2vh;
+    }
+}
 
 @media screen and (max-width: 481px) {
 
