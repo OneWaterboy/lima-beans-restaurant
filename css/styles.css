@@ -13,6 +13,7 @@ body {
     background-color: var(--accent-color);
     position: fixed;
     top: 0%;
+    z-index: 1000;
 }
 
 .nav-content {
@@ -101,6 +102,19 @@ nav {
 
 .truck-address {
     margin-top: 4px;
+}
+
+/* Location Map Dropdown Styling */
+
+#locationMap /*, #orderOnline, #contactUs*/ {
+    width: 80%;
+    height: 60vh;
+    background-color: rgb(0, 0, 0, 0.85);
+    position: absolute;
+    top: 12vh;
+    z-index: 999;
+    margin-left: 10%;
+    
 }
 
 /*==============================================================
