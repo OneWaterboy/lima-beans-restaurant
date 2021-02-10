@@ -109,7 +109,7 @@ nav {
 
 @media screen and (max-width: 1024px) {
 
-    ul.nav-links {
+    .nav-links {
         font-size: 2rem;
         margin: 0;
         padding: 0;
@@ -121,7 +121,7 @@ nav {
 
     .todays-location, .truck-address { 
         position: relative;
-        top: 25vh;
+        top: 10vh;
     }
 }
 
@@ -129,6 +129,17 @@ nav {
 
     .social-links {
         display: none;
+    }
+    
+    .social-links-bottom {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 50%;
+        position: fixed;
+        bottom: 1vh;
+        margin: 0 auto;
+        background-color: var(--accent-color);
+        text-align: center;  
     }
 
     .nav-content {
