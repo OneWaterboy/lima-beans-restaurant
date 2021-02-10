@@ -52,11 +52,11 @@ nav {
 
 
 .header {
-    margin: 0;
-}
-.header-image {
-    width: 100%;
-    margin-top: 10vh;
+    background-image: url('/images/indian-dhal-spicy-curry-bowl-spices-herbs-rustic-black-wooden-table.jpg');
+    background-size: cover;
+    background-position: 25% 75%;
+    height: 90vh;
+    width: 100vw;
 }
 
 /* Location Bar Styling */
@@ -64,24 +64,33 @@ nav {
 .truckLocale {
     margin: 0 auto;
     width: 90%;
-    text-align: center;
+    text-align: left;
+    position: relative;
+    top: 30vh;
+    left: 0;
 }
 
 .todays-location {
     margin-top:  0px;
-    color: black;
+    color: whitesmoke;
     width: 100%;
     text-align: center;
     padding-top: 2vh;
     text-decoration: underline;
     display: inline;
+    font-family: 'Londrina Outline', cursive;
+    font-size: 3rem;
 }
 
-#truckAddress {
-    font-weight: 600;
+#truckAddress, #truckAddress2 {
+    color: whitesmoke;
+    font-family: 'Londrina Outline', cursive;
+    font-size: 3rem;
 }
 
-
+.truck-address {
+    margin-top: 4px;
+}
 
 /*==============================================================
         Responsive Styling (Media Queries)
@@ -93,4 +102,29 @@ nav {
         font-size: 1rem;
     }
 
+    #truckAddress, #truckAddress2 {
+        font-size: 2rem;
+    }
+
+    .todays-location, .truck-address { 
+        position: relative;
+        top: 25vh;
+    }
 }
+
+@media screen and (max-width: 769px) { }
+
+@media screen and (max-width: 481px) {
+
+    .header {
+        background-position: 50% 50%;
+    }
+
+    .todays-location, .truck-address { 
+        font-size: 1.5rem;
+        position: relative;
+        top: 20vh;
+    }
+ }
+
+
