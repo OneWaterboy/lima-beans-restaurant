@@ -34,12 +34,13 @@ const truckSpot = [
     [4, 35.77757263183594, -78.5833969116211],
     [5, 35.7700929, -78.5688005],
     [6, 35.63391876220703, -82.55599212646484]
-]
+];
+
 
 function initMap() {
     const myLatLng = { lat: 35.779140, lng: -78.634050 };
     const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 16,
+      zoom: 15,
       center: myLatLng,
     });
     new google.maps.Marker({
@@ -48,4 +49,21 @@ function initMap() {
       title: "Hello World!",
     });
   }
+
   
+let latitude = function lat() {
+    for (i=0; i < truckSpot.length; i++){
+        if(truckSpot[i] === currentDay){
+            console.log(truckSpot[i][1]) ;
+        }
+    }
+}
+
+let longitude = function long() {
+    for (i=0; i < truckSpot.length; i++){
+        if(truckSpot[i] === currentDay){
+            return truckSpot[i][2];
+        }
+    }
+}
+
