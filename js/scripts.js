@@ -23,6 +23,17 @@ function todaysLocation () {
     }
 };
 
+//Show Dropdowns when upper menu items are clicked
+
+function showLocationDropdown() {
+    if(document.getElementById('locationMap').style.display === 'none'){
+        document.getElementById('locationMap').style.display = 'block';
+    } else {
+        document.getElementById('locationMap').style.display = 'none';
+    }
+    
+}
+
 // API to import google map based on the day of the week and location for that day
 
 let map;

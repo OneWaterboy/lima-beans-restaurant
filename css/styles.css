@@ -113,7 +113,8 @@ nav {
     position: absolute;
     top: 12vh;
     z-index: 999;
-    margin-left: 10%; 
+    margin-left: 10%;
+    display: none; 
 }
 
 .drop-down-titles {
