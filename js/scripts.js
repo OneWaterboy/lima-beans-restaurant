@@ -23,8 +23,29 @@ function todaysLocation () {
     }
 };
 
-/*
-console.log(currentDay);
-console.log(dayOfWeek[1][0]);
-console.log(todaysLocation);
-*/
+// API to import google map based on the day of the week and location for that day
+
+let map;
+const truckSpot = [
+    [0, -24.031050, -46.524210],
+    [1, 35.779140, -78.634050],
+    [2, 35.776270, -78.639830],
+    [3, 35.8192996, -78.6276527],
+    [4, 35.77757263183594, -78.5833969116211],
+    [5, 35.7700929, -78.5688005],
+    [6, 35.63391876220703, -82.55599212646484]
+]
+
+function initMap() {
+    const myLatLng = { lat: 35.779140, lng: -78.634050 };
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 16,
+      center: myLatLng,
+    });
+    new google.maps.Marker({
+      position: myLatLng,
+      map,
+      title: "Hello World!",
+    });
+  }
+  
