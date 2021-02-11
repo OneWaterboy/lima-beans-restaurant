@@ -25,11 +25,20 @@ function todaysLocation () {
 
 //Show Dropdowns when upper menu items are clicked
 
-function showLocationDropdown() {
+function showDropdowns() {
     if(document.getElementById('locationMap').style.display === 'none'){
         document.getElementById('locationMap').style.display = 'block';
     } else {
         document.getElementById('locationMap').style.display = 'none';
+    }
+    
+}
+
+function showOrderOnlineDropdown() {
+    if(document.getElementById('orderOnline').style.display === 'none'){
+        document.getElementById('orderOnline').style.display = 'block';
+    } else {
+        document.getElementById('orderOnline').style.display = 'none';
     }
     
 }

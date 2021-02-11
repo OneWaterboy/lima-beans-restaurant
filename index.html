@@ -21,9 +21,9 @@
             <img class="logo" src="images/lima-beans-logo.png" alt="limabeans logo">
             <nav>
                 <ul class="nav-links">
-                    <li onclick="showLocationDropdown()">Find Us</li>
-                    <li>Order</li>
-                    <li>Contact</li>
+                    <li onclick="showDropdowns()">Find Us</li>
+                    <li onclick="showDropdowns()">Order</li>
+                    <li onclick="showDropdowns()">Contact</li>
                 </ul>
             </nav>
             <div class="social-links">
@@ -56,18 +56,23 @@
                 </div>
             </div>
             <div id="map" onload="initMap()">
-
+                
             </div>
             
-        </div>
-        <div>
-
-        </div>                     
+        </div>                   
     </div>
-    <div id="orderOnline">
-                            
+    <div id="orderOnline" style="display: none;" >
+        <div class="location-grid">
+            <div class="ordering-grid">
+                <a class="order-link" href="https://www.ubereats.com"> Order With Uber Eats!</a>
+                <p class="drop-down-titles"> Have it delivered, or pick it up from the truck</p>
+            </div> 
+            <div>
+                <img class="order-now-image" src="/images/4318164.jpg">
+            </div> 
+        </div>        
     </div>
-    <div id="contactUs">
+    <div id="contactUs" style="display: none;">
                             
     </div>
     <div class="header">

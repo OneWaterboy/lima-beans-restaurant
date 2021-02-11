@@ -106,7 +106,7 @@ nav {
 
 /* Location Map Dropdown Styling */
 
-#locationMap /*, #orderOnline, #contactUs*/ {
+#locationMap, #orderOnline, #contactUs {
     width: 80%;
     height: 60vh;
     background-color: rgb(0, 0, 0, 0.85);
@@ -114,7 +114,6 @@ nav {
     top: 12vh;
     z-index: 999;
     margin-left: 10%;
-    display: none; 
 }
 
 .drop-down-titles {
@@ -124,15 +123,34 @@ nav {
 
 .location-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     width: 90%;
     height: 80%;
     margin: 20px auto;
     border-right: whitesmoke;
+    align-items: center;
 }
 
 #map {
     height: 100%;
+  }
+
+  /* Order Online Drop Down Area */
+
+  .order-now-image {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .ordering-grid {
+      justify-items: center;
+  }
+
+  .order-link {
+      background-color: whitesmoke;
+      width: 50%;
+      margin: 0 auto;
   }
 
 /*==============================================================
