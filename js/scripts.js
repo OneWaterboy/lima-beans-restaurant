@@ -25,13 +25,11 @@ function todaysLocation () {
 
 //Show Dropdowns when upper menu items are clicked
 
-function showDropdowns() {
-    if(document.getElementById('locationMap').style.display === 'none'){
-        document.getElementById('locationMap').style.display = 'block';
-    } else {
-        document.getElementById('locationMap').style.display = 'none';
+function showLocationDropdown() {
+    if (document.getElementById('locationMap').style.display === 'none'){
+        document.getElementById('locationMap').style.display === 'block';
+        
     }
-    
 }
 
 function showOrderOnlineDropdown() {

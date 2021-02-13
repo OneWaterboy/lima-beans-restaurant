@@ -63,7 +63,7 @@ nav {
 
 
 .header {
-    background-image: url('/images/indian-dhal-spicy-curry-bowl-spices-herbs-rustic-black-wooden-table.jpg');
+    background-image: url("/images/curry-bowl.jpg");
     background-size: cover;
     background-position: 25% 75%;
     height: 80vh;
@@ -184,9 +184,10 @@ nav {
     .social-links-bottom {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        width: 50%;
+        width: 40%;
         position: fixed;
         bottom: 1vh;
+        left: 30%;
         margin: 0 auto;
         background-color: var(--accent-color);
         text-align: center;  
@@ -206,6 +207,15 @@ nav {
         margin: 0 auto;
         padding: 0px;
         margin-top: 2vh;
+    }
+    #locationMap, #orderOnline, #contactUs {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
+    #map {
+        height: 60%;
     }
 }
 
