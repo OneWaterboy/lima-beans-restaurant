@@ -43,7 +43,7 @@ nav {
     width: 90%;
     font-size: 2rem;
     margin: 0 auto;
-    
+    cursor: pointer;
     
 }
 
@@ -208,6 +208,8 @@ nav {
         padding: 0px;
         margin-top: 2vh;
     }
+
+
     #locationMap, #orderOnline, #contactUs {
         height: 100%;
         width: 100%;
